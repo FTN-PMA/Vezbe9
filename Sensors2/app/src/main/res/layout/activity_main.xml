@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ftn.rs.sensors.MainActivity">
+
+    <TextView
+            android:id="@+id/tvAccelerometar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="70dp"
+            android:text="Accelerometer" />
+
+    <TextView
+            android:id="@+id/tvMagneticField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAccelerometar"
+            android:layout_marginTop="65dp"
+            android:text="Magnetic field" />
+
+    <TextView
+            android:id="@+id/tvLinearAccelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAccelerometar"
+            android:layout_marginTop="30dp"
+            android:text="Non-gravity accelerometer" />
+
+    <TextView
+            android:id="@+id/tvGyroscope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvAccelerometar"
+            android:layout_below="@+id/tvMagneticField"
+            android:layout_marginTop="28dp"
+            android:text="Gyroscope" />
+
+    <TextView
+            android:id="@+id/tvProximitySensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvGyroscope"
+            android:layout_below="@+id/tvGyroscope"
+            android:layout_marginTop="21dp"
+            android:text="Proximity senzor:" />
+</RelativeLayout>
