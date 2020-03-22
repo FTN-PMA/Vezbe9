@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Sensors2.iml" filepath="$PROJECT_DIR$/Sensors2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Sensors2-app.iml" filepath="$PROJECT_DIR$/app/Sensors2-app.iml" group="Sensors2/app" />
+      <module fileurl="file://$PROJECT_DIR$/Vezbe9-Sensors2.iml" filepath="$PROJECT_DIR$/Vezbe9-Sensors2.iml" group="Sensors2" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
