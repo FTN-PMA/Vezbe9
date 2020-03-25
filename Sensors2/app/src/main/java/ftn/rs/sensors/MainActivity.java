@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         tvGyroscope = (TextView) findViewById(R.id.tvGyroscope);
     }
 
+    /*
+    * Bitno je da zakacimo/otkacimo listener na pravom mestu. Kada zelmo da koristimo
+    * odredjeni senzor, najbolje mesto da se listener zakci, da bi dobijali mernja,
+    * jeste metoda onResume.
+    * */
     @Override
     protected void onResume() {
         super.onResume();
@@ -58,6 +63,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 SensorManager.SENSOR_DELAY_NORMAL);
     }
 
+    /*
+    * Najbolje mesto da otkacimo listener jeste onPause. Voditi racuna
+    * da se svi listener-i koji rade sa senzorima otkace, kada
+    * vise ne zelimo da ih koristimo.
+    * */
     @Override
     protected void onPause() {
         super.onPause();
